@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Vida | Finish the Scent. Plant the Seed. | Natural Zero-Waste Wooden Deodorant</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="La Vida is Bangladesh's first dual-function zero-waste wooden deodorant stick that transforms into an indoor planter. 100% natural, refillable, aluminum-free. ৳1,500 – ৳3,000." />
+  <meta name="keywords" content="La Vida deodorant, wooden deodorant, zero waste Bangladesh, eco friendly deodorant Dhaka, organic deodorant, bKash deodorant, plantable packaging" />
+  <meta name="author" content="La Vida Naturals" />
+  <link rel="icon" type="image/svg+xml" href="assets/emblem.svg" />
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Announcement">
+    <div>
+      🌿 <strong>Bangladesh Launch Special:</strong> Free nationwide delivery on orders over ৳2,000 | Accept <strong>bKash, Nagad & Cash on Delivery</strong>
+    </div>
+    <div class="top-bar-links">
+      <span class="top-pill">🌱 Zero Waste Living</span>
+      <span class="top-pill">🇧🇩 Dhaka & Chattogram Ready</span>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand" aria-label="La Vida Home">
+        <!-- Prominent Visual Logo on Front Page -->
+        <img src="assets/logo.svg" alt="La Vida - Natural Deodorant Zero Waste Logo" class="nav-logo-svg" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#architecture" class="nav-link">Product Architecture</a></li>
+          <li><a href="#concept-demo" class="nav-link">30s Demo</a></li>
+          <li><a href="#lineup" class="nav-link">Scent & Seed Lineup</a></li>
+          <li><a href="#pricing-value" class="nav-link">Why ৳1,500–৳3,000?</a></li>
+          <li><a href="#four-pillars" class="nav-link">4 Pillars</a></li>
+          <li><a href="#bangladesh" class="nav-link">Selling in Bangladesh</a></li>
+          <li><a href="#impact" class="nav-link">Zero Waste Impact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="currency-badge" onclick="setCurrency(STATE.currency === 'BDT' ? 'USD' : 'BDT')" title="Click to switch currency">
+          🇧🇩 BDT (৳)
+        </button>
+        <button class="cart-btn" onclick="openCartDrawer()" aria-label="Open Shopping Bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>Bag</span>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (PDF Page 1) -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-tag">
+            <span>🌿</span> Natural Deodorant · Zero Waste
+          </div>
+          
+          <h1 class="hero-title">
+            La Vida
+            <span class="italic-phrase">Finish the scent. Plant the seed.</span>
+          </h1>
+
+          <p class="hero-lead">
+            <strong>La Vida means "The Life".</strong> A handcrafted wooden deodorant stick that becomes an aesthetic indoor planter when it is used up. Made for modern conscious living in Bangladesh.
+          </p>
+
+          <!-- Price Positioning Banner -->
+          <div class="hero-price-strip">
+            <div>
+              <div class="hero-price-tag">৳1,650 – ৳2,950</div>
+              <div class="hero-price-desc">Affordable luxury tier in Bangladesh · Cheaper than imported premium deos · 100% Zero Landfill Waste</div>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#lineup" class="btn btn-gold">
+              <span>Explore Scents & Seeds</span>
+              <span>→</span>
+            </a>
+            <a href="#concept-demo" class="btn btn-outline">
+              <span>▶ Watch 30-Sec Concept Demo</span>
+            </a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="badge-item">
+              <div class="badge-icon">🪴</div>
+              <div class="badge-text">1 Planter Created<br>From Every Stick</div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">💧</div>
+              <div class="badge-text">48h Weather Guard<br>Humid Climate Fit</div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🇧🇩</div>
+              <div class="badge-text">bKash / Nagad / COD<br>Fast Nationwide Delivery</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-img-wrap">
+            <img src="assets/images/hero.jpg" alt="La Vida Wooden Deodorant and Companion Seedling Planter" />
+            <div class="floating-pill pill-top">
+              <span class="pill-glow"></span>
+              <span><strong>100% Solid Wood</strong> with Brass Collar</span>
+            </div>
+            <div class="floating-pill pill-bottom">
+              <span>🌱</span>
+              <span><strong>Bergamot & Tulsi Seeds</strong> included in every pack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DUAL-FUNCTION PRODUCT ARCHITECTURE (PDF Page 2) -->
+    <section class="section section-bg-cream" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">Page 2 of Concept</div>
+          <h2 class="section-title">Dual-function product architecture</h2>
+          <p class="section-subtitle">
+            Engineered with a modular, zero-waste lifecycle: use it daily for lasting freshness, lift out the inner core, and sow life into the permanent wooden shell.
+          </p>
+        </div>
+
+        <div class="arch-grid">
+          <div class="arch-cards">
+            <!-- Architecture Card 1 -->
+            <div class="arch-card active" onclick="selectArchCard(0)">
+              <div class="arch-card-number">
+                <span>1. Wooden stick shell</span>
+                <span class="arch-badge">Exterior Artisan Craft</span>
+              </div>
+              <h3 class="arch-card-title">Handcrafted Light Oak & Walnut</h3>
+              <p class="arch-card-desc">
+                Light natural wood with the <strong>La Vida</strong> mark and scent name laser-engraved, finished with an elegant solid brass collar and built-in moisture protection.
+              </p>
+            </div>
+
+            <!-- Architecture Card 2 -->
+            <div class="arch-card" onclick="selectArchCard(1)">
+              <div class="arch-card-number">
+                <span>2. Removable core</span>
+                <span class="arch-badge">100% Biodegradable</span>
+              </div>
+              <h3 class="arch-card-title">Plant-Fiber Deodorant Sleeve</h3>
+              <p class="arch-card-desc">
+                A biodegradable inner sleeve holds the natural deodorant formula. When the stick is finished, the sleeve lifts out effortlessly with zero plastic discarded.
+              </p>
+            </div>
+
+            <!-- Architecture Card 3 -->
+            <div class="arch-card" onclick="selectArchCard(2)">
+              <div class="arch-card-number">
+                <span>3. Planter box</span>
+                <span class="arch-badge">Life After Scent</span>
+              </div>
+              <h3 class="arch-card-title">Indoor Window & Desk Planter</h3>
+              <p class="arch-card-desc">
+                The empty shell becomes an indoor planter with built-in internal root drainage and aeration, ready for its companion seed packet (Tulsi, Mint, Bergamot, or Lavender).
+              </p>
+            </div>
+          </div>
+
+          <div class="arch-visual-wrap">
+            <img src="assets/images/architecture.jpg" alt="La Vida 3-Stage Architecture: Wooden Shell, Removable Core, Desk Planter" />
+            <div class="arch-diagram-overlay">
+              <div>
+                <span class="arch-stage-indicator" id="arch-stage-indicator">Stage 1: Solid Light Wood Shell with Brass Collar</span>
+                <div style="font-size: 0.82rem; color: #E0E8E2; margin-top: 4px;">Click the architecture cards on the left to explore each layer</div>
+              </div>
+              <span style="font-size: 1.5rem;">🪴</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCEPT DEMO: 30-SECOND SIMULATOR (PDF Page 3) -->
+    <section class="demo-section" id="concept-demo">
+      <div class="container demo-container">
+        <div class="demo-info">
+          <div class="demo-tag">Concept Demo</div>
+          <h2 class="demo-title">See La Vida in action</h2>
+          <p class="demo-desc">
+            Shell, removable core, planter: the whole idea in 30 seconds.
+          </p>
+          <blockquote class="demo-quote">
+            "Finish the scent. Plant the seed."
+          </blockquote>
+
+          <div class="demo-timeline">
+            <div class="timeline-step active" onclick="renderSimulatorStep(0)">
+              <div class="step-num">1</div>
+              <div class="step-text">Day 1-60: Daily Natural Roll-On (48h Guard)</div>
+            </div>
+            <div class="timeline-step" onclick="renderSimulatorStep(1)">
+              <div class="step-num">2</div>
+              <div class="step-text">Stick Empty: Lift the Biodegradable Core</div>
+            </div>
+            <div class="timeline-step" onclick="renderSimulatorStep(2)">
+              <div class="step-num">3</div>
+              <div class="step-text">Add Built-In Drainage & Soil Coin</div>
+            </div>
+            <div class="timeline-step" onclick="renderSimulatorStep(3)">
+              <div class="step-num">4</div>
+              <div class="step-text">Sow Seed Packet (Tulsi / Bergamot / Lavender)</div>
+            </div>
+            <div class="timeline-step" onclick="renderSimulatorStep(4)">
+              <div class="step-num">5</div>
+              <div class="step-text">Blossom into Living Desk Planter</div>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-gold" id="sim-play-btn" onclick="toggleAutoPlaySimulator()">
+              <span>▶ Auto-Play 30s Journey</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Simulator Card -->
+        <div class="demo-simulator-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="badge-tag badge-gold" id="sim-badge">Dual-Function Shell</span>
+            <span style="font-size:0.8rem; color:#A7B8AC;">Interactive Prototype</span>
+          </div>
+
+          <div class="sim-stage-visual" id="sim-visual">
+            <!-- Dynamic graphic rendered by JS -->
+          </div>
+
+          <div class="sim-status">
+            <div class="sim-status-title" id="sim-step-title">Stage 1: Daily Roll-On Freshness</div>
+            <div style="font-size: 0.78rem; color: var(--accent-brass-light); margin-bottom: 4px;" id="sim-step-sub">Days 1 - 60</div>
+            <div class="sim-status-desc" id="sim-step-desc">
+              Smooth all-natural glide made with organic arrowroot, coconut oils, and essential fragrances. Provides 48-hour moisture and odor guard tested for Bangladesh's humid climate.
+            </div>
+          </div>
+
+          <div class="sim-progress-bar">
+            <div class="sim-progress-fill" id="sim-progress-fill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENT & SEED LINEUP / PRODUCT CATALOG (PDF Page 4) -->
+    <section class="section" id="lineup">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">PDF Page 4 & 5</div>
+          <h2 class="section-title">Scent and seed lineup</h2>
+          <p class="section-subtitle">
+            <strong>Walnut & Oak collection:</strong> Bergamot Zest, Wild Lavender and Mint, Eucalyptus and Sea Salt, and Bangladesh Holy Tulsi — each paired with its own heirloom seed packet. 
+            Collectible shapes in square, octagonal, and rounded shells.
+          </p>
+        </div>
+
+        <!-- Product Cards (Prices ৳1,500 – ৳3,000) -->
+        <div class="product-grid" id="products-grid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+
+        <!-- Custom Stick Studio / Interactive Scent-Seed Matcher -->
+        <div style="margin-top: 4.5rem; background: #FAF7F0; border: 1px solid var(--border-gold); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm);">
+          <div style="text-align: center; max-width: 650px; margin: 0 auto 2rem;">
+            <span class="badge-tag">Interactive Customizer</span>
+            <h3 style="font-family: var(--font-serif); font-size: 2rem; color: var(--text-dark); margin: 0.5rem 0;">Craft Your Custom Collectible Shape</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">Pick your geometric wooden silhouette, wood species, and companion seed packet.</p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; align-items: center;">
+            <!-- Shape selector -->
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dark); display: block; margin-bottom: 0.6rem;">1. Select Shape</label>
+              <div style="display: flex; gap: 0.6rem;">
+                <button class="btn btn-outline btn-sm shape-opt-btn active" data-val="Rounded" style="flex:1;">Round</button>
+                <button class="btn btn-outline btn-sm shape-opt-btn" data-val="Octagonal" style="flex:1;">Octagon</button>
+                <button class="btn btn-outline btn-sm shape-opt-btn" data-val="Square" style="flex:1;">Square</button>
+              </div>
+
+              <label style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dark); display: block; margin: 1.2rem 0 0.6rem;">2. Select Wood Species</label>
+              <div style="display: flex; gap: 0.6rem;">
+                <button class="btn btn-outline btn-sm wood-opt-btn active" data-val="Oak" style="flex:1;">Oak</button>
+                <button class="btn btn-outline btn-sm wood-opt-btn" data-val="Walnut" style="flex:1;">Walnut</button>
+                <button class="btn btn-outline btn-sm wood-opt-btn" data-val="Teak" style="flex:1;">Teak</button>
+              </div>
+            </div>
+
+            <!-- Scent selector -->
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dark); display: block; margin-bottom: 0.6rem;">3. Select Scent & Seed Sync</label>
+              <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <button class="btn btn-outline btn-sm scent-opt-btn active" data-val="Bergamot" style="text-align: left; justify-content: flex-start;">
+                  🍋 Bergamot Zest (w/ Citrus Seeds)
+                </button>
+                <button class="btn btn-outline btn-sm scent-opt-btn" data-val="Lavender" style="text-align: left; justify-content: flex-start;">
+                  🪻 Wild Lavender & Mint (w/ Lavender)
+                </button>
+                <button class="btn btn-outline btn-sm scent-opt-btn" data-val="Tulsi" style="text-align: left; justify-content: flex-start;">
+                  🌿 Bangladesh Holy Tulsi (w/ Tulsi Seeds)
+                </button>
+                <button class="btn btn-outline btn-sm scent-opt-btn" data-val="Sandalwood" style="text-align: left; justify-content: flex-start;">
+                  🪵 Sandalwood Spice (w/ Marigold)
+                </button>
+              </div>
+            </div>
+
+            <!-- Customizer Live Card -->
+            <div style="background: #FFF; border-radius: var(--radius-md); padding: 1.8rem; border: 1.5px solid var(--accent-brass); box-shadow: var(--shadow-sm); text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🪵🌱</div>
+              <h4 id="custom-stick-title" style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-dark);">Rounded Oak · Bergamot</h4>
+              <p id="custom-seed-match" style="font-size: 0.85rem; color: var(--wood-walnut); margin: 0.4rem 0 1rem;">Includes: Bergamot Citrus Seeds + Soil Coin</p>
+              <div id="custom-price-tag" style="font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700; color: var(--accent-forest); margin-bottom: 1rem;">৳1,650</div>
+              <button class="btn btn-primary btn-sm" style="width: 100%;" onclick="addCustomStickToCart()">
+                Add Custom Stick to Bag
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRICING RATIONALE & BANGLADESH MARKET TRANSPARENCY (User Request) -->
+        <div class="pricing-rationale" id="pricing-value">
+          <div class="rationale-header">
+            <span class="badge-tag">Transparent Value</span>
+            <h2 class="section-title" style="font-size: 2.3rem;">Why ৳1,500 – ৳3,000 in Bangladesh?</h2>
+            <p class="section-subtitle">
+              There are many types of deodorant in Bangladesh. Cheap mass-market chemical sprays are under ৳1,000, while imported premium foreign brands easily exceed ৳4,500 – ৳7,000+. 
+              <strong>La Vida offers the reasonable sweet spot:</strong> pure artisanal craftsmanship, zero plastic, and long-term refill economy for conscious Bangladeshi customers.
+            </p>
+          </div>
+
+          <table class="compare-table" aria-label="Deodorant Price Comparison in Bangladesh">
+            <thead>
+              <tr>
+                <th>Feature / Criterion</th>
+                <th>Cheap Sprays (&lt; ৳1,000)</th>
+                <th class="highlight-col">La Vida (৳1,500 – ৳3,000) 🌿</th>
+                <th>Imported Luxury (&gt; ৳4,500)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Packaging Material</strong></td>
+                <td><span class="cross-red">✗</span> Disposable aluminum / plastic can</td>
+                <td class="highlight-col"><span class="check-green">✓</span> Hand-turned natural Oak & Walnut wood</td>
+                <td>Plastic container / heavy acrylic</td>
+              </tr>
+              <tr>
+                <td><strong>After-Life Value</strong></td>
+                <td><span class="cross-red">✗</span> Landfill garbage in Dhaka/Chattogram</td>
+                <td class="highlight-col"><span class="check-green">✓</span> Converts to an indoor green plant for desk</td>
+                <td><span class="cross-red">✗</span> Non-reusable trash</td>
+              </tr>
+              <tr>
+                <td><strong>Skin & Climate Health</strong></td>
+                <td>Alcohol burning, aluminum chlorohydrate, chemical propellants</td>
+                <td class="highlight-col"><span class="check-green">✓</span> 100% Aluminum & Paraben-free, crafted for humid climate</td>
+                <td>Often too heavy or greasy for humid weather</td>
+              </tr>
+              <tr>
+                <td><strong>Repeat Order Cost</strong></td>
+                <td>Have to rebuy whole disposable can</td>
+                <td class="highlight-col"><span class="check-green">✓</span> Refill pods only ৳1,500 (Save money & keep the shell)</td>
+                <td>Very costly repeat orders (৳5,000+)</td>
+              </tr>
+              <tr>
+                <td><strong>Gift & Decor Value</strong></td>
+                <td>Zero decor value, hides in drawer</td>
+                <td class="highlight-col"><span class="check-green">✓</span> Sculptural decor for windowsill or desk</td>
+                <td>Standard perfume bottle look</td>
+              </tr>
+              <tr>
+                <td><strong>Bangladesh Payment Support</strong></td>
+                <td>Generic supermarket cash</td>
+                <td class="highlight-col"><span class="check-green">✓</span> bKash, Nagad, Card, Nationwide COD</td>
+                <td>Foreign credit card / import agent fees</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="background: var(--bg-moss-subtle); padding: 1.2rem 1.6rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent-forest); font-size: 0.92rem; color: var(--text-dark);">
+            💡 <strong>The Verdict:</strong> By choosing La Vida within the <strong>৳1,500 – ৳3,000</strong> range, you receive a luxurious wooden sculpture that never sees a trash bin, nourishes living plants in your home, and protects your body with certified non-toxic organic botanicals.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUR PILLARS OF MARKET DEMAND (PDF Page 5) -->
+    <section class="section section-bg-cream" id="four-pillars">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">PDF Page 5</div>
+          <h2 class="section-title">Four pillars of market demand</h2>
+          <p class="section-subtitle">
+            Engineered around the core behavioral shifts of conscious consumers in Bangladesh and worldwide.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-icon">🌿</div>
+            <h3 class="pillar-title">Eco living</h3>
+            <p class="pillar-desc">
+              Natural formulas in sustainable wood packaging. Zero aluminum salts, zero phthalates, and zero chemical aerosol propellants.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-icon">♻️</div>
+            <h3 class="pillar-title">Zero waste</h3>
+            <p class="pillar-desc">
+              Packaging turns into a useful home item, not landfill. The shell endures forever as a botanical planter or pen stand.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-icon">🌱</div>
+            <h3 class="pillar-title">Scent-seed sync</h3>
+            <p class="pillar-desc">
+              Each scent comes with a matching seed packet: Bergamot seeds with Citrus, Sacred Tulsi with Mint, Lavender seeds with Lavender.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card">
+            <div class="pillar-icon">🪵</div>
+            <h3 class="pillar-title">Aesthetic decor</h3>
+            <p class="pillar-desc">
+              Natural wood that suits a desk, shelf or windowsill. Collectible geometric shapes that add organic warmth to any room.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPOSITION AND IMPACT (PDF Page 6) -->
+    <section class="impact-hero" id="impact">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag badge-gold">PDF Page 6</div>
+          <h2 class="section-title" style="color: #FFF;">Value proposition and impact</h2>
+          <p class="section-subtitle" style="color: #B5C4BA;">
+            Measurable positive change from your daily morning grooming ritual.
+          </p>
+        </div>
+
+        <div class="impact-stats-grid">
+          <div class="impact-stat-card">
+            <div class="stat-number">0</div>
+            <div class="stat-label">disposable plastic left behind</div>
+          </div>
+          <div class="impact-stat-card">
+            <div class="stat-number">1</div>
+            <div class="stat-label">planter created from every stick</div>
+          </div>
+          <div class="impact-stat-card">
+            <div class="stat-number">Multiple</div>
+            <div class="stat-label">scent and seed pairs to collect</div>
+          </div>
+        </div>
+
+        <div class="impact-quote-box">
+          <p>
+            "Collectibility builds lifetime value: customers return to complete the shelf, and every refill brings a new scent and a new plant."
+          </p>
+          <small style="display:block; margin-top:0.8rem; color:#A7B8AC; font-size:0.75rem;">
+            *Impact figures to be validated with lab and lifecycle data before investor use.
+          </small>
+        </div>
+
+        <!-- Interactive Eco Calculator -->
+        <div style="margin-top: 3.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(212,175,55,0.3); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--accent-brass-light); margin-bottom: 0.5rem;">Calculate Your Zero-Waste Impact</h3>
+          <p style="font-size: 0.95rem; color: #CCD6CF; margin-bottom: 1.8rem;">Slide to see the plastic prevented and green plants generated over time:</p>
+          
+          <div style="max-width: 500px; margin: 0 auto;">
+            <input type="range" id="months-slider" min="1" max="36" value="12" style="width: 100%; accent-color: var(--accent-brass);" />
+            <div style="font-weight: 700; color: var(--accent-brass-light); margin-top: 0.5rem;" id="slider-months-val">12 Months of La Vida</div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+            <div style="background: rgba(0,0,0,0.3); padding: 1.2rem; border-radius: var(--radius-md);">
+              <div style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: #50E3C2;" id="eco-plastic-saved">18 Bottles</div>
+              <div style="font-size: 0.8rem; color: #B5C4BA;">Plastic Bottles Diverted</div>
+            </div>
+            <div style="background: rgba(0,0,0,0.3); padding: 1.2rem; border-radius: var(--radius-md);">
+              <div style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: #72B583;" id="eco-plants-grown">6 Live Plants</div>
+              <div style="font-size: 0.8rem; color: #B5C4BA;">Home Planters Bloomed</div>
+            </div>
+            <div style="background: rgba(0,0,0,0.3); padding: 1.2rem; border-radius: var(--radius-md);">
+              <div style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: var(--accent-brass-light);" id="eco-co2-reduced">6.1 kg CO₂</div>
+              <div style="font-size: 0.8rem; color: #B5C4BA;">Emissions Prevented</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELLING IN BANGLADESH & FESTIVE GIFT BOXES (PDF Page 7) -->
+    <section class="section" id="bangladesh">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">PDF Page 7</div>
+          <h2 class="section-title">Selling in Bangladesh</h2>
+          <p class="section-subtitle">
+            Tailored specifically for the Bangladeshi lifestyle, weather conditions, festive gift-giving traditions, and convenient digital payment rails.
+          </p>
+        </div>
+
+        <div class="bd-grid">
+          <!-- Channels -->
+          <div class="bd-card">
+            <div class="bd-card-header">
+              <div class="bd-card-icon">🛍️</div>
+              <h3 class="bd-card-title">Omnichannel Presence</h3>
+            </div>
+            <p class="bd-card-text">
+              Direct-to-consumer online ordering via our official website, Facebook and Instagram shops, and Daraz Flagship Mall. Physical retail touchpoints across Dhaka (Gulshan, Banani, Dhanmondi) and Chattogram concept stores, eco-friendly plant nurseries, and lifestyle cafes.
+            </p>
+            <div class="bd-tag-list">
+              <span class="bd-tag">Facebook Shop</span>
+              <span class="bd-tag">Instagram Store</span>
+              <span class="bd-tag">Daraz Mall</span>
+              <span class="bd-tag">Gulshan Nurseries</span>
+              <span class="bd-tag">Chattogram Cafes</span>
+            </div>
+          </div>
+
+          <!-- Price & Payment -->
+          <div class="bd-card">
+            <div class="bd-card-header">
+              <div class="bd-card-icon">💳</div>
+              <h3 class="bd-card-title">Price and payment</h3>
+            </div>
+            <p class="bd-card-text">
+              <strong>Premium but reachable price (৳1,500 – ৳3,000)</strong> so that customers have frictionless repeat orders. Seamlessly accept <strong>bKash, Nagad, Rocket, Credit/Debit cards</strong>, and reliable <strong>Cash on Delivery (COD)</strong> across all 64 districts in Bangladesh.
+            </p>
+            <div class="bd-tag-list">
+              <span class="bd-tag" style="background:#FFF0F5; color:#D81B60; font-weight:700;">bKash Payment</span>
+              <span class="bd-tag" style="background:#FFF3E0; color:#E65100; font-weight:700;">Nagad Wallet</span>
+              <span class="bd-tag">Cash on Delivery</span>
+              <span class="bd-tag">VISA / Mastercard</span>
+            </div>
+          </div>
+
+          <!-- Local Fit -->
+          <div class="bd-card">
+            <div class="bd-card-header">
+              <div class="bd-card-icon">🌿</div>
+              <h3 class="bd-card-title">Local Climate & Botanical Fit</h3>
+            </div>
+            <p class="bd-card-text">
+              Formulated specifically for the hot, humid subtropical Bangladesh climate with natural odor-neutralizing minerals and moisture-wicking organic arrowroot. Sourced with local sustainably harvested wood species and companion seeds such as <strong>Sacred Krishna Tulsi, Pudina (Mint), and Marigold (Genda)</strong>.
+            </p>
+            <div class="bd-tag-list">
+              <span class="bd-tag">Krishna Tulsi</span>
+              <span class="bd-tag">Bengal Pudina</span>
+              <span class="bd-tag">Marigold Genda</span>
+              <span class="bd-tag">48h Humidity Shield</span>
+            </div>
+          </div>
+
+          <!-- Launch Moments -->
+          <div class="bd-card">
+            <div class="bd-card-header">
+              <div class="bd-card-icon">🎁</div>
+              <h3 class="bd-card-title">Festive Launch Moments</h3>
+            </div>
+            <p class="bd-card-text">
+              Curated limited editions for <strong>Eid-ul-Fitr, Eid-ul-Adha, and Pohela Boishakh</strong> gift boxes. Special thematic corporate and university green gifting initiatives for World Environment Day to replace plastic trophies with living wooden planters.
+            </p>
+            <div class="bd-tag-list">
+              <span class="bd-tag">Eid Mubarak Gift Box</span>
+              <span class="bd-tag">Pohela Boishakh Box</span>
+              <span class="bd-tag">World Environment Day</span>
+              <span class="bd-tag">Corporate Green Gifting</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Festive Gift Spotlight -->
+        <div class="gift-spotlight">
+          <div class="gift-img-wrap">
+            <img src="assets/images/giftbox.jpg" alt="Pohela Boishakh and Eid Luxury Wooden Gift Crate" />
+          </div>
+          <div class="gift-content">
+            <span class="badge-tag badge-gold">Festive Bangladesh Edition</span>
+            <h3 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--text-dark); margin: 0.8rem 0 0.4rem;">
+              Pohela Boishakh & Eid Deluxe Wooden Crate
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+              A bespoke zero-waste heirloom gift. Includes two handcrafted wooden deodorant sticks (Bergamot & Wild Lavender), companion Tulsi & Marigold seed packets, coco peat expanding soil discs, and an authentic handmade terracotta cup.
+            </p>
+
+            <div class="gift-price-line">
+              <div class="gift-price">৳2,950</div>
+              <div class="gift-old-price">৳3,400</div>
+              <span class="top-pill" style="background:#E8F5E9; color:#2E7D32; border-color:#81C784;">Save ৳450</span>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn btn-gold" onclick="addToCart('lv-giftbox-deluxe')">
+                <span>Add Deluxe Gift Box to Bag</span>
+                <span>+</span>
+              </button>
+              <button class="btn btn-outline" onclick="openCheckoutModal()">
+                <span>Instant bKash Checkout</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNATIONAL ROADMAP (PDF Page 8) -->
+    <section class="section section-bg-dark" id="international">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag badge-gold">PDF Page 8</div>
+          <h2 class="section-title" style="color: #FFF;">Selling internationally</h2>
+          <p class="section-subtitle" style="color: #B5C4BA;">
+            <strong>Path:</strong> Prove the concept in Bangladesh, test online export, then sign global retail partners.
+          </p>
+        </div>
+
+        <div class="intl-grid">
+          <div class="intl-card">
+            <h3 class="intl-card-title">Target Markets</h3>
+            <p>
+              EU, UK, US, Australia, and Japan: catering to high-intent buyers seeking certified plastic-free, zero-waste personal care and aesthetic botanical decor.
+            </p>
+          </div>
+          <div class="intl-card">
+            <h3 class="intl-card-title">Global Channels</h3>
+            <p>
+              Official Shopify global storefront, Etsy artisan shop, Amazon Handmade, boutique zero-waste retailers, and an international Kickstarter/Indiegogo crowdfunding launch.
+            </p>
+          </div>
+          <div class="intl-card">
+            <h3 class="intl-card-title">Compliance & Standards</h3>
+            <p>
+              FSC-certified sustainable wood, EU/FDA compliant organic cosmetic safety rules per market, and seed import limits: seeds sourced locally within destination countries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO & CLOSING STATEMENT (PDF Page 9) -->
+    <section class="manifesto-section">
+      <div class="container">
+        <img src="assets/emblem.svg" alt="La Vida Emblem" class="manifesto-emblem" />
+        <span class="manifesto-tag">PDF Page 9 · Thank You</span>
+        <blockquote class="manifesto-quote">
+          "Zero waste isn't just a goal—it's a lifestyle.<br>
+          Join us in redefining personal care with packaging designed never to be thrown away."
+        </blockquote>
+        <div class="manifesto-sub">
+          <strong>La Vida: Finish the Scent. Plant the Seed. 🪴</strong>
+        </div>
+
+        <div style="display: inline-flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#lineup" class="btn btn-gold">
+            <span>Order Your First Stick (from ৳1,650)</span>
+            <span>→</span>
+          </a>
+          <button class="btn btn-outline" style="border-color:#FFF; color:#FFF;" onclick="openCheckoutModal()">
+            <span>Order via WhatsApp / bKash</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo-white.svg" alt="La Vida Logo" style="height: 48px; margin-bottom: 1.2rem;" />
+        <p style="line-height: 1.6; margin-bottom: 1.2rem; max-width: 340px;">
+          Handcrafted natural deodorant in sustainable wood that transforms into an indoor planter. Proudly designed for Bangladesh and the planet.
+        </p>
+        <div style="display: flex; gap: 0.8rem; font-size: 1.2rem;">
+          <span title="Facebook">📘</span>
+          <span title="Instagram">📸</span>
+          <span title="WhatsApp">💬</span>
+          <span title="YouTube">📺</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#architecture">Product Architecture</a></li>
+          <li><a href="#concept-demo">30-Second Simulator</a></li>
+          <li><a href="#lineup">Scent & Seed Lineup</a></li>
+          <li><a href="#pricing-value">Why ৳1,500 – ৳3,000?</a></li>
+          <li><a href="#four-pillars">Four Pillars</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Bangladesh Hub</h4>
+        <ul class="footer-links">
+          <li><span>📍 Gulshan 2, Dhaka - 1212</span></li>
+          <li><span>📍 GEC Circle, Chattogram</span></li>
+          <li><span>📞 +880 1700-528432 (LA-VIDA)</span></li>
+          <li><span>✉️ hello@lavida.com.bd</span></li>
+          <li><span>🇧🇩 bKash Merchant: 01700528432</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Join The Seed Club</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 1rem;">Receive seasonal heirloom seeds and early access to limited wooden batches.</p>
+        <form onsubmit="event.preventDefault(); showToast('Thank you for subscribing to the Seed Club!');" style="display: flex; gap: 0.5rem;">
+          <input type="email" placeholder="Your email address" required style="padding: 0.65rem 0.9rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.06); color: #FFF; width: 100%;" />
+          <button type="submit" class="btn btn-gold btn-sm">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© 2026 La Vida Naturals Ltd. All rights reserved. Registered under Bangladesh Trademark Act.</div>
+      <div style="display: flex; gap: 1.5rem;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Shipping & COD Terms</a>
+        <a href="#">Seed Germination Guide</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SHOPPING BAG DRAWER -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-backdrop" onclick="closeCartDrawer()"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">Your Shopping Bag (<span id="cart-drawer-count">0</span>)</div>
+      <button class="cart-close-btn" onclick="closeCartDrawer()" aria-label="Close Bag">×</button>
+    </div>
+
+    <div class="cart-items-container" id="cart-items-list">
+      <!-- Items dynamically generated by app.js -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <!-- Promo voucher -->
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+        <input type="text" id="promo-input" placeholder="Promo code (e.g. BANGLADESH)" style="flex: 1; padding: 0.5rem 0.8rem; border-radius: var(--radius-sm); border: 1px solid #D1C9B8; font-size: 0.85rem;" />
+        <button class="btn btn-outline btn-sm" onclick="applyPromoCode()">Apply</button>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cart-subtotal" style="font-weight: 700;">৳0</span>
+      </div>
+
+      <div class="cart-summary-line" id="cart-discount-line" style="display: none; color: #2E7D32;">
+        <span>Promo Discount</span>
+        <span id="cart-discount" style="font-weight: 700;">-৳0</span>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Nationwide Delivery</span>
+        <span id="cart-delivery">৳80</span>
+      </div>
+
+      <div class="cart-summary-line cart-summary-total">
+        <span>Estimated Total</span>
+        <span id="cart-total">৳0</span>
+      </div>
+
+      <button class="btn btn-gold" style="width: 100%; margin-top: 1.2rem;" onclick="openCheckoutModal()">
+        <span>Proceed to Checkout</span>
+        <span>→</span>
+      </button>
+
+      <div style="display: flex; justify-content: center; gap: 0.8rem; margin-top: 0.8rem; font-size: 0.75rem; color: var(--text-muted);">
+        <span>🔒 256-Bit SSL</span>
+        <span>🇧🇩 bKash / Nagad / COD</span>
+        <span>🌱 Guaranteed Seed Sprout</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT MODAL WITH BANGLADESH PAYMENT OPTIONS -->
+  <div class="modal-backdrop" id="checkout-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <img src="assets/emblem.svg" alt="Emblem" style="width: 28px; height: 28px;" />
+          <h3 style="font-family: var(--font-serif); font-size: 1.3rem;">Complete Your La Vida Order</h3>
+        </div>
+        <button onclick="closeCheckoutModal()" style="color: #FFF; font-size: 1.5rem;">×</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="processOrder(event)">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-input" id="order-name" placeholder="e.g. Tanvir Ahmed" required />
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Mobile Number * (bKash/Nagad/SMS)</label>
+              <input type="tel" class="form-input" id="order-phone" placeholder="017XXXXXXXX" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">District *</label>
+              <select class="form-select" id="order-district">
+                <option value="Dhaka City">Dhaka City (24-48h Delivery)</option>
+                <option value="Chattogram">Chattogram</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Mymensingh">Mymensingh</option>
+                <option value="Outside Dhaka">Other Districts</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Delivery Street Address *</label>
+            <input type="text" class="form-input" id="order-address" placeholder="House, Road, Area (e.g. House 42, Road 11, Banani)" required />
+          </div>
+
+          <!-- Payment Options in Bangladesh -->
+          <div class="form-group">
+            <label class="form-label">Select Payment Method *</label>
+            <div class="payment-methods">
+              <div class="pay-option selected" id="pay-opt-bkash" onclick="selectPaymentMethod('bkash')">
+                <div style="font-size: 1.2rem;">🌸</div>
+                <div style="font-size: 0.82rem; font-weight: 700; color: #D81B60;">bKash</div>
+                <div style="font-size: 0.7rem; color: #888;">Direct Merchant</div>
+              </div>
+
+              <div class="pay-option" id="pay-opt-nagad" onclick="selectPaymentMethod('nagad')">
+                <div style="font-size: 1.2rem;">🟠</div>
+                <div style="font-size: 0.82rem; font-weight: 700; color: #E65100;">Nagad</div>
+                <div style="font-size: 0.7rem; color: #888;">Wallet Payment</div>
+              </div>
+
+              <div class="pay-option" id="pay-opt-cod" onclick="selectPaymentMethod('cod')">
+                <div style="font-size: 1.2rem;">💵</div>
+                <div style="font-size: 0.82rem; font-weight: 700; color: var(--accent-forest);">Cash on Delivery</div>
+                <div style="font-size: 0.7rem; color: #888;">Pay upon arrival</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bKash Details Box -->
+          <div id="bkash-details-box" style="background: #FFF0F5; border: 1px solid #F8BBD0; padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.2rem; font-size: 0.85rem;">
+            <p style="font-weight: 700; color: #C2185B; margin-bottom: 0.3rem;">bKash Merchant Payment Steps:</p>
+            <p>1. Send Payment or Make Payment to Merchant Account: <strong>01700-528432</strong></p>
+            <p>2. Enter Reference: <strong>LAVIDA</strong></p>
+            <div style="margin-top: 0.6rem;">
+              <input type="text" class="form-input" placeholder="Enter 10-digit bKash TrxID (optional for test)" style="font-size: 0.82rem; padding: 0.5rem 0.8rem;" />
+            </div>
+          </div>
+
+          <!-- Nagad Details Box -->
+          <div id="nagad-details-box" style="display: none; background: #FFF3E0; border: 1px solid #FFE0B2; padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.2rem; font-size: 0.85rem;">
+            <p style="font-weight: 700; color: #E65100; margin-bottom: 0.3rem;">Nagad Merchant Account:</p>
+            <p>Make payment to Nagad Merchant: <strong>01700-528432</strong></p>
+            <div style="margin-top: 0.6rem;">
+              <input type="text" class="form-input" placeholder="Enter Nagad Transaction ID" style="font-size: 0.82rem; padding: 0.5rem 0.8rem;" />
+            </div>
+          </div>
+
+          <!-- COD Details Box -->
+          <div id="cod-details-box" style="display: none; background: var(--bg-moss-subtle); border: 1px solid rgba(42,72,54,0.2); padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.2rem; font-size: 0.85rem;">
+            <p style="font-weight: 700; color: var(--accent-forest);">Cash on Delivery Available Nationwide</p>
+            <p>You can pay the full amount in cash directly to the courier agent upon inspecting your package.</p>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin: 1.5rem 0 1rem; padding-top: 1rem; border-top: 1px solid #E1DACB;">
+            <span style="font-size: 1.1rem; font-weight: 600;">Total Payable:</span>
+            <span id="checkout-grand-total" style="font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700; color: var(--accent-forest);">৳0</span>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width: 100%;">
+            Confirm & Place Order 🪴
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

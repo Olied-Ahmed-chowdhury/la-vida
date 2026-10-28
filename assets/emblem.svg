@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="embGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE6A2"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA820A"/>
+    </linearGradient>
+    <linearGradient id="embLeaf" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D5A43"/>
+      <stop offset="100%" stop-color="#6AA87A"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="50" cy="50" r="48" fill="#1A2820" stroke="url(#embGold)" stroke-width="2"/>
+  <circle cx="50" cy="50" r="44" fill="none" stroke="url(#embGold)" stroke-width="1" stroke-dasharray="2 2"/>
+
+  <!-- Wooden pot / shell -->
+  <path d="M35 63 L40 78 C42 83 58 83 60 78 L65 63 Z" fill="#8B5A2B" stroke="url(#embGold)" stroke-width="1.5"/>
+  <rect x="36.5" y="66" width="27" height="3.5" rx="1" fill="url(#embGold)"/>
+
+  <!-- Sprout stem -->
+  <path d="M50 63 Q50 44 44 31" fill="none" stroke="url(#embGold)" stroke-width="2.2" stroke-linecap="round"/>
+  
+  <!-- Left Leaf -->
+  <path d="M46 43 C35 41 32 27 47 32 C47 38 46 42 46 43 Z" fill="url(#embLeaf)" stroke="url(#embGold)" stroke-width="1"/>
+  
+  <!-- Right Leaf -->
+  <path d="M47 35 C58 31 62 21 49 25 C47 30 47 33 47 35 Z" fill="#6EA579" stroke="url(#embGold)" stroke-width="1"/>
+
+  <!-- Little radiant rays -->
+  <circle cx="50" cy="20" r="2.2" fill="url(#embGold)"/>
+  <line x1="50" y1="13" x2="50" y2="16" stroke="url(#embGold)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="42" y1="16" x2="44.5" y2="18.5" stroke="url(#embGold)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="58" y1="16" x2="55.5" y2="18.5" stroke="url(#embGold)" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
